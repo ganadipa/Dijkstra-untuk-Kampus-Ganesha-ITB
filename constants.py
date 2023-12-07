@@ -37,8 +37,53 @@ ganesha_map = [
     'Gedung Perpustakaan Pusat',
     'Pusat Peneliti antar Universitas',
     'Gedung Serba Guna (GSG)',
-    'Labtek III - FTI, Teknik Industri, Matematika, Astronomi, PPPPM',
-    'Pasca Sarjana, Pusat Peneliti Kepariwisataan',
-    'Sarana Olahraga Ganesha (SARAGA)' 
+    'Labtek III (Lantai 1)',
+    'Gedung SBM',
+    'CC Timur',
+    'Area Parkir Sipil',
+    'Area Parkir SR',
+    'CC Barat bagian Timur',
+    'CIBE',
+    'Gedung Teknik Lingkungan bagian Barat',
+    'Labtek VII bagian Barat',
+    'Labtek VIII bagian Barat',
+    'Labtek V bagian Timur',
+    'Labtek VI bagian Timur',
+    'Labtek Biru',
+    'Labtek III (Lantai 2)'    
+]
+
+
+mushola_node = [
+    3, # FTSL 
+    4, # Fisika
+    5, # CC Barat
+    10, 
+    11, # Mushola bundar
+    15, # GKUT
+    16, # Gedung SF
+    18, # Labtek V
+    22, # GKUB
+    23, # FTMD
+    24, # Labtek XI
+    25, # Labtek X
+    30, # Labtek I
+    33, # Tambang
+    38, # CADL
+    45, # CIBE
+    41, # CC Timur
+    52, # Labtek III lt 2
     
 ]
+
+canteen_node = [
+    12, 
+    15, # GKUT
+    18, # Labtek 5
+    22, # GKUB
+    31, 
+    32, 
+    39, # Kantin SBM
+    51, # labbir
+]
+
