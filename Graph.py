@@ -60,11 +60,11 @@ class Graph():
                 continue
             
             
-            if (is_in(current_node+1, mushola_node)) and current_distance < nearest_mushola_distance: # mushola_node is 1-indexed
+            if (nearest_mushola == -1) and (is_in(current_node+1, mushola_node)) and current_distance < nearest_mushola_distance: # mushola_node is 1-indexed
                 nearest_mushola = current_node
                 nearest_mushola_distance = current_distance
             
-            if (is_in(current_node+1, canteen_node)) and current_distance < nearest_canteen_distance:
+            if (nearest_canteen == -1) and (is_in(current_node+1, canteen_node)) and current_distance < nearest_canteen_distance:
                 nearest_canteen = current_node
                 nearest_canteen_distance = current_distance
                 

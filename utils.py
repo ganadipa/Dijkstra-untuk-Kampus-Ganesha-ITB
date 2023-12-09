@@ -28,5 +28,4 @@ def is_in(target, array) -> bool:
         else:
             hi = mid - 1
 
-    
     return check

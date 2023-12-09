@@ -50,7 +50,8 @@ ganesha_map = [
     'Labtek V bagian Timur',
     'Labtek VI bagian Timur',
     'Labtek Biru',
-    'Labtek III (Lantai 2)'    
+    'Labtek III (Lantai 2)',
+    'CC Timur bagian Barat' 
 ]
 
 
@@ -69,9 +70,10 @@ mushola_node = [
     25, # Labtek X
     30, # Labtek I
     33, # Tambang
+    36, # Perpustakaan
     38, # CADL
-    45, # CIBE
     41, # CC Timur
+    45, # CIBE
     52, # Labtek III lt 2
     
 ]
