@@ -69,24 +69,15 @@ class Graph():
                 nearest_canteen_distance = current_distance
                 
 
-            # if (current_node+1) in mushola_node:
-            #     nearest_mushola = current_node
-            #     count += len(mushola_node)
-            
-            # if (current_node+1) in canteen_node:
-            #     nearest_canteen = current_node
-            #     count += len(mushola_node)
-                
-                
-            if (nearest_mushola != -1 and nearest_canteen != -1):
-                break
-
             for neighbor, weight in self.adj[current_node]:
                 distance = current_distance + weight
 
                 if distance < distances[neighbor]:
                     distances[neighbor] = distance
                     heapq.heappush(priority_queue, (distance, neighbor))
+        
+        
+                    
         return [(nearest_mushola, nearest_mushola_distance), (nearest_canteen, nearest_canteen_distance)]
             
                 

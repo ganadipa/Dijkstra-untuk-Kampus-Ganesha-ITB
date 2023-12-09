@@ -16,7 +16,8 @@ class TestDijkstra(unittest.TestCase):
             with open("tests/" +input_files[i], "r") as f:
                 t = int(f.readline())
                 for j in range(t):
-                    inp.append(int(f.readline()))
+                    inp.append(int(f.readline()) -1)
+            
             
             exp = []
             with open("tests/" + expected_files[i], "r") as f:
@@ -24,6 +25,9 @@ class TestDijkstra(unittest.TestCase):
                     exp_nearest_musholla, exp_nearest_musholla_distance = map(int, f.readline().strip().split(" "))
                     
                     exp_nearest_canteen, exp_nearest_canteen_distance = map(int, f.readline().strip().split(" "))
+                    
+                    exp_nearest_musholla -= 1
+                    exp_nearest_canteen -= 1
                     
                     exp.append([
                         (exp_nearest_musholla, exp_nearest_musholla_distance),
