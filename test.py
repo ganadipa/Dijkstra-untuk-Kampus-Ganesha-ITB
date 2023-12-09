@@ -6,21 +6,24 @@ class TestDijkstra(unittest.TestCase):
     def test_dijkstra(self):
         g = Graph()
         
-        input_files = [f for f in os.listdir('./tests') if f.endswith('.in')]
-        expected_files = [f for f in os.listdir('./tests') if f.endswith('.out')]
-
+        input_files = [f.split(".")[0] for f in os.listdir('./tests') if f.endswith('.in')]
+        expected_files = [f.split(".")[0] for f in os.listdir('./tests') if f.endswith('.out')]
+        
+        if (input_files != expected_files):
+            raise Exception("File .in dan .out tidak simetri.")
+        
         length = len(input_files)
         for i in range(length):
             
             inp = []
-            with open("tests/" +input_files[i], "r") as f:
+            with open(f"tests/{input_files[i]}.in", "r") as f:
                 t = int(f.readline())
                 for j in range(t):
                     inp.append(int(f.readline()) -1)
             
             
             exp = []
-            with open("tests/" + expected_files[i], "r") as f:
+            with open(f"tests/{expected_files[i]}.out", "r") as f:
                 for j in range(t):
                     exp_nearest_musholla, exp_nearest_musholla_distance = map(int, f.readline().strip().split(" "))
                     
